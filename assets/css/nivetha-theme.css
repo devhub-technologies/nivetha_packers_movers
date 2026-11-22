@@ -1,0 +1,235 @@
+/* Nivetha Packers and Movers - brand theme (navy + yellow, from the logo) */
+:root {
+  --nv-navy: #0a2a66;
+  --nv-navy-deep: #051945;
+  --nv-yellow: #f8be03;
+  --nv-red: #d62828;
+}
+
+/* ---------- logos ---------- */
+.nv-logo-header { height: 76px; width: auto; display: block; }
+.nv-logo-footer { height: 150px; width: auto; display: block; }
+.main-menu-two__logo a { display: inline-block; }
+.mobile-nav__content .logo-box img { width: 110px; height: auto; }
+
+/* ---------- hero ---------- */
+.banner-one__img { top: 0; width: 52%; }
+.banner-one__img img.nv-hero-img {
+  width: 100%; height: 100%; object-fit: cover; object-position: 30% center;
+  animation: none;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 38%);
+          mask-image: linear-gradient(to right, transparent 0%, #000 38%);
+}
+@media (max-width: 991px) {
+  .banner-one__img { width: 100%; opacity: .28; }
+  .banner-one__img img.nv-hero-img { -webkit-mask-image: none; mask-image: none; }
+}
+
+/* ---------- page header / cta / why image ---------- */
+.cta-one__img { bottom: 30px; right: 90px; }
+.cta-one__img img { height: 330px; width: auto; }
+.why-choose-two__img img { width: 560px; max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+@media (max-width: 1199px) { .why-choose-two__img { display: none; } .cta-one__img img { height: 240px; } }
+@media (max-width: 767px) { .cta-one__img { display: none; } }
+
+/* testimonial avatar = logo */
+.testimonial-two__client-img img { border-radius: 50%; background: #fff; }
+
+/* static counter text */
+.nv-count-text { font-size: 44px; line-height: 1.1; font-weight: 700; color: var(--tanspot-base); margin: 0; }
+
+/* form messages */
+.nv-form-msg { margin: 14px 0 0; font-size: 15px; }
+.nv-form-msg--ok { color: var(--tanspot-base); }
+.nv-form-msg--err { color: #ff8a8a; }
+
+/* ---------- yellow accent: keep text readable ---------- */
+.section-title__tagline { color: var(--nv-navy); }
+.section-title__tagline-box .section-title__shape-1 i,
+.section-title__tagline-box .section-title__shape-2 i { color: var(--nv-yellow); }
+.banner-one .section-title__tagline, .why-choose-two .section-title__tagline,
+.contact-one .section-title__tagline, .testimonial-two .section-title__tagline { color: var(--nv-yellow); }
+.testimonial-two .section-title__tagline { color: var(--nv-navy); }
+.counter-two__count h3, .counter-two__count span, .nv-count-text { color: var(--nv-navy); }
+.nv-count-text { font-size: 38px; }
+.thm-btn span, .thm-btn span i { color: var(--nv-yellow); }
+.services-two__icon, .services-two__icon span,
+.process-one__icon span, .why-choose-two__icon span,
+.testimonial-two__quote i, .about-three__experience-box { color: var(--nv-navy); }
+.services-two__single:hover .services-two__title h3 a { color: var(--nv-navy); }
+.main-menu__list > li.current > a, .main-menu__list > li:hover > a { color: var(--nv-navy); }
+.main-menu-two__top .text a, .main-menu-two__top p, .main-menu-two__contact-list li .icon i { color: var(--nv-navy); }
+.nv-logo-header { height: 84px; }
+
+/* =====================================================================
+   BUTTON HOVER - text always readable
+   yellow button (navy text)  -> hover: navy fill, white text
+   header navy button (white) -> hover: white fill, navy text
+   ===================================================================== */
+.thm-btn { color: var(--nv-navy); }
+.thm-btn:hover, .thm-btn:focus { color: #fff; }
+.thm-btn > span { background-color: var(--nv-navy); color: var(--nv-yellow); }
+.thm-btn:hover > span { background-color: #fff; color: var(--nv-navy); }
+.thm-btn:hover > span i { color: var(--nv-navy); }
+
+.main-menu-two__btn-box .thm-btn,
+.stricky-header .thm-btn,
+.mobile-nav__content .thm-btn { background-color: var(--nv-navy); color: #fff; }
+.main-menu-two__btn-box .thm-btn > span,
+.stricky-header .thm-btn > span { background-color: var(--nv-yellow); color: var(--nv-navy); }
+.main-menu-two__btn-box .thm-btn:hover,
+.stricky-header .thm-btn:hover { color: var(--nv-navy); }
+.main-menu-two__btn-box .thm-btn:hover > span,
+.stricky-header .thm-btn:hover > span { background-color: var(--nv-navy); color: #fff; }
+.main-menu-two__btn-box .thm-btn:hover > span i,
+.stricky-header .thm-btn:hover > span i { color: #fff; }
+
+/* service cards: title / "Book Now" hover stays readable (no yellow-on-white) */
+.services-two__title h3 a:hover,
+.services-two__single:hover .services-two__title h3 a { color: var(--nv-navy); text-decoration: underline; text-underline-offset: 4px; }
+.services-two__btn a { color: var(--nv-navy); }
+.services-two__btn a:hover { color: var(--nv-navy); gap: 10px; }
+.services-two__btn a .icon-next { color: var(--nv-navy); transition: transform .3s ease; }
+.services-two__btn a:hover .icon-next { transform: translateX(4px); }
+.services-two__single:hover .services-two__icon span { color: var(--nv-yellow); }
+.footer-widget__link li a:hover, .site-footer__bottom-text a:hover { color: var(--nv-yellow); }
+
+/* =====================================================================
+   PAGE HEADER / BREADCRUMB - compact, image instead of logo
+   ===================================================================== */
+.page-header { min-height: 0; }
+.page-header__bg { opacity: 0; }   /* old bg had logo baked in */
+.page-header__inner { position: static; }
+.page-header__inner { padding: 56px 0 58px; min-height: 0; position: static; }
+.page-header__inner h3 { font-size: 36px; line-height: 1.15; margin-bottom: 10px; }
+.page-header__inner > * { max-width: 55%; }
+.page-header__img-1 {
+  position: absolute; top: 0; bottom: 0; right: 0; left: auto;
+  width: 44%; max-width: none; display: block; z-index: -1;
+}
+.page-header__img-1 img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 55%);
+          mask-image: linear-gradient(to right, transparent 0%, #000 55%);
+}
+.page-header__inner .page-header__img-1 { max-width: none; }
+.thm-breadcrumb li, .thm-breadcrumb li a { line-height: 20px; }
+@media (max-width: 991px) {
+  .page-header__inner { padding: 42px 0 44px; }
+  .page-header__inner h3 { font-size: 30px; }
+  .page-header__inner > * { max-width: 100%; }
+  .page-header__img-1 { display: block !important; width: 100%; opacity: .22; }
+  .page-header__img-1 img { -webkit-mask-image: none; mask-image: none; }
+}
+@media (max-width: 575px) {
+  .page-header__inner { padding: 32px 0 34px; }
+  .page-header__inner h3 { font-size: 26px; }
+  .thm-breadcrumb li, .thm-breadcrumb li a { font-size: 14px; }
+}
+
+/* =====================================================================
+   RESPONSIVE - all screen sizes
+   ===================================================================== */
+html, body { overflow-x: hidden; }
+img { max-width: 100%; }
+
+/* service cards: image box, consistent crop */
+.services-two__grid .services-two__img img { height: 240px; object-fit: cover; transform: none; }
+.services-two__grid .services-two__single:hover .services-two__img img { transform: scale(1.05); }
+.services-two__content { padding: 38px 26px 26px; }
+@media (max-width: 1199px) { .services-two__grid { gap: 24px; } .services-two__title h3 { font-size: 20px; } }
+@media (max-width: 991px)  { .services-two__grid { grid-template-columns: repeat(2, 1fr); } .services-two__grid .services-two__img img { height: 220px; } }
+@media (max-width: 575px)  {
+  .services-two__grid { grid-template-columns: 1fr; gap: 22px; }
+  .services-two__grid .services-two__img img { height: 210px; }
+  .services-two__icon { height: 60px; width: 60px; top: -30px; right: 22px; }
+  .services-two__icon span { font-size: 30px; }
+  .services-two__content { padding: 34px 20px 22px; }
+}
+
+/* header */
+@media (max-width: 1199px) { .nv-logo-header { height: 68px; } }
+@media (max-width: 767px)  { .nv-logo-header { height: 56px; } .main-menu-two__top { display: none; } }
+@media (max-width: 380px)  { .nv-logo-header { height: 48px; } }
+
+/* footer logo, headings, sections */
+@media (max-width: 767px) {
+  .nv-logo-footer { height: 110px; }
+  .section-title__title { font-size: 28px; line-height: 1.25; }
+  .section-title__title br { display: none; }
+  .nv-count-text { font-size: 30px; }
+  .thm-btn { font-size: 15px; }
+  .site-footer__bottom-inner, .site-footer-two__bottom-inner { text-align: center; flex-direction: column; gap: 8px; }
+}
+@media (max-width: 575px) {
+  .container { padding-left: 16px; padding-right: 16px; }
+  .section-title__title { font-size: 24px; }
+  .about-three__experience-box, .why-choose-two__point li { max-width: 100%; }
+}
+
+/* forms: full width, comfortable tap targets */
+.contact-page__form input, .contact-page__form textarea, .contact-page__form select,
+.contact-one__form input, .contact-one__form textarea, .contact-one__form select,
+form input[type=text], form input[type=email], form input[type=tel], form textarea { max-width: 100%; }
+@media (max-width: 767px) {
+  form input, form select, form textarea, form button { font-size: 16px; }
+  .contact-page__inner, .contact-one__form-box { padding-left: 16px; padding-right: 16px; }
+}
+
+/* maps / iframes / tables never overflow */
+iframe { max-width: 100%; }
+table { display: block; overflow-x: auto; max-width: 100%; }
+
+/* floating call / whatsapp buttons: smaller on phones */
+@media (max-width: 575px) {
+  #Phonei, #Whatsapp { width: 46px; height: 46px; padding: 6px; right: 8px; }
+  #Phonei { bottom: 90px; }
+  #Whatsapp { bottom: 30px; }
+}
+
+/* mobile / tablet header spacing */
+@media (max-width: 1199px) {
+  .main-menu-two__wrapper-inner { padding: 6px 16px; }
+  .main-menu-two__main-menu-box { margin-left: auto; }
+  .mobile-nav__toggler { color: var(--nv-navy); }
+}
+@media (max-width: 575px) { .main-menu-two__wrapper-inner { padding: 6px 14px; } }
+
+/* hero on tablet/mobile: image only as a dim backdrop so text stays readable */
+@media (max-width: 991px) {
+  .banner-one__img, .banner-one__img.aos-animate { opacity: .22 !important; }
+  .banner-one__title, .banner-one__text { position: relative; z-index: 2; }
+}
+@media (max-width: 575px) {
+  .banner-one__title { font-size: 34px; line-height: 1.2; }
+}
+@media (max-width: 991px) {
+  .banner-one__line-shpae1, .banner-one__line-shpae2 { display: none !important; }
+  .banner-one__text br { display: none; }
+}
+
+/* ---- mobile menu: every item visible, active item highlighted ---- */
+.mobile-nav__content .main-menu__list > li > a,
+.mobile-nav__content .main-menu__list > li:hover > a { color: #fff; }
+.mobile-nav__content .main-menu__list > li.current > a { color: var(--nv-yellow); }
+.mobile-nav__content .main-menu__list > li > a::before,
+.mobile-nav__content .main-menu__list > li > a::after { display: none !important; }
+
+/* ---- CTA button pairs: side by side, wrap only if really needed ---- */
+.about-three__btn-and-video, .banner-one__btn-and-review-box {
+  display: flex !important; flex-direction: row !important; flex-wrap: wrap;
+  align-items: center; gap: 12px 16px !important; margin-top: 30px;
+}
+.about-three__btn-box { margin: 0; }
+@media (max-width: 575px) {
+  .about-three__btn-and-video { gap: 10px !important; flex-wrap: nowrap; }
+  .about-three__btn-box .thm-btn { font-size: 14px; padding-left: 12px; padding-right: 6px; gap: 5px; }
+  .about-three__btn-box .thm-btn > span { height: 30px; width: 30px; }
+}
+@media (max-width: 360px) { .about-three__btn-and-video { flex-wrap: wrap; } }
+
+/* ---- breadcrumb a little taller ---- */
+.page-header__inner { padding: 82px 0 84px; }
+.page-header__inner h3 { font-size: 40px; }
+@media (max-width: 991px) { .page-header__inner { padding: 62px 0 64px; } .page-header__inner h3 { font-size: 32px; } }
+@media (max-width: 575px) { .page-header__inner { padding: 50px 0 52px; } .page-header__inner h3 { font-size: 28px; } }
